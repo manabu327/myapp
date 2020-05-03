@@ -1,14 +1,17 @@
 <template>
-  <div id="app">
-    <h1>掲示板アプリ</h1>
+  <div>
+    <Header />
   </div>
 </template>
 
 <script>
 import 'normalize.css';
+import Header from './components/Header';
 
 export default {
-
+  components:{
+    Header
+  }
 }
 </script>
 
