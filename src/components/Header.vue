@@ -13,7 +13,7 @@ export default {
 <style>
 .header {
   background-color: #33ffdd;
-  height: 60px;
+  height: 80px;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -21,7 +21,7 @@ export default {
 
 .logo {
   color: #fff;
-  line-height: 60px;
+  line-height: 80px;
   padding-left: 10px;
   margin: 0;
 }
