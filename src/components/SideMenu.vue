@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .menu {
   position: fixed;
   width: 199px;
@@ -31,8 +31,8 @@ export default {
 }
 
 .menu-list-title {
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
   border-bottom: 1px solid #000;
   font-size: 0.8em;
 }

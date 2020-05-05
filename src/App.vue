@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .app-container {
   display: flex;
   padding-top: 80px;
