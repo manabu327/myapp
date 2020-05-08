@@ -1,8 +1,8 @@
 <template>
   <main class="main-container">
-    <TextBox />
+    <TextBox :onPost="addMessage"/>
     <div class="devider"></div>
-    <MessageList :messages="messages" />
+    <MessageList :messages="reversedMessages" />
   </main>
 </template>
 
@@ -17,19 +17,18 @@ export default {
   },
   data() {
     return {
-      messages: [
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" },
-        { body: "aaaaaaaa", date: "bbbbbbbb" }
-      ]
+      messages: []
     };
+  },
+  computed: {
+    reversedMessages () {
+      return this.messages.slice().reverse();
+    }
+  },
+  methods: {
+    addMessage(message) {
+      this.messages.push(message);
+    }
   }
 };
 </script>
